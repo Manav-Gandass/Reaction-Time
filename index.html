@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Reaction Time Tester</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <h1>Reaction Time Tester</h1>
+
+      <div class="controls">
+        <label class="toggle">
+          <input type="checkbox" id="distractionToggle" />
+          <span class="slider"></span>
+          <span class="toggle-text">Enable Distractions</span>
+        </label>
+        <button id="startBtn">Start</button>
+      </div>
+
+      <div class="stats">
+        <div>Attempts: <span id="attempts">0</span></div>
+        <div>Streak: <span id="streak">0</span></div>
+      </div>
+
+      <div id="gameArea">
+        <div id="statusText">WAIT</div>
+
+        <div id="leaderboard">
+          <h3>Top Times</h3>
+          <ul id="leaderboardList"></ul>
+        </div>
+      </div>
+
+      <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
