@@ -1,105 +1,52 @@
-Reaction Time Tester
-Project Description
+# ⚡ Reaction Time Tester
 
-Reaction Time Tester is a browser-based interactive web application that measures how quickly a user reacts to a visual signal.
-The application challenges the user to click the correct circle as fast as possible while avoiding distractions.
-Difficulty increases automatically over time, making the test more challenging as the user improves.
+A simple reaction time game built using **basic HTML, CSS, and JavaScript**. The application measures how quickly users can react to a target while optionally adding distractions to increase the challenge.
 
-This project is built using Vanilla JavaScript, HTML, and CSS, with a strong focus on DOM manipulation and event-driven logic.
+## Features
 
-Problem Statement
+- Measure reaction time
+- Random wait before target appears
+- Optional distraction mode
+- Tracks number of attempts
+- Streak counter
+- Leaderboard showing the top 5 fastest reaction times
+- Increasing difficulty after successful attempts
+- Responsive and interactive interface
 
-Many people want to test and improve their reaction speed in a simple and engaging way.
-This project provides a clean and interactive reaction testing environment where users must respond quickly to a visual cue while handling distractions.
-The goal is to measure reaction time accurately and provide immediate feedback to the user.
+## Technologies Used
 
-Features Implemented
+- HTML
+- CSS
+- JavaScript
 
-Reaction time measurement using visual cues
+## Project Structure
 
-Random delay before target appears
+```
+├── index.html
+├── style.css
+├── script.js
+└── README.md
+```
 
-Target appears at random positions on the screen
+## How It Works
 
-Optional visual distractions (toggle on/off)
+- Click the **Start** button to begin a round.
+- Wait until the target appears.
+- Click the target as quickly as possible.
+- Clicking too early ends the round.
+- If distraction mode is enabled, avoid clicking the distraction circles.
+- Your reaction time is displayed after each successful attempt.
+- The application keeps track of your attempts, current streak, and top five fastest reaction times.
+- The game becomes more challenging after each successful round by reducing the waiting time.
 
-Same-looking target and distraction elements to test focus
+## Future Improvements
 
-Friendly feedback for different user actions
+- Multiple difficulty levels
+- Sound effects
+- Player names for the leaderboard
+- Timer and performance graphs
+- Mobile-friendly touch controls
 
-Session-based leaderboard showing top reaction times
+## Preview
 
-Attempts and streak tracking
-
-Automatic hidden difficulty scaling
-
-Clean and responsive user interface
-
-DOM Concepts Used
-
-Dynamic creation and removal of DOM elements
-
-Event listeners for click events
-
-Event delegation for handling different click targets
-
-Conditional rendering based on application state
-
-Updating text and styles dynamically using JavaScript
-
-Managing UI state using JavaScript variables
-
-Application Flow
-
-User clicks Start
-
-Application waits for a random delay
-
-Target circle appears on the screen
-
-User clicks:
-
-Correct circle → reaction time is recorded
-
-Distraction circle → failure message shown
-
-Empty area → miss message shown
-
-Too early → “Too soon” message shown
-
-Difficulty increases internally
-
-User can repeat the test and try to improve their score
-
-Technologies Used
-
-HTML5
-
-CSS3
-
-Vanilla JavaScript (ES6+)
-
-No external libraries or frameworks are used.
-
-How to Run the Project
-
-Clone or download the repository
-
-Open index.html in any modern web browser
-
-Click Start to begin the test
-
-(Optional) Enable distractions using the toggle
-
-Known Limitations
-
-Leaderboard data is session-based and resets on page refresh
-
-No backend or database is used
-
-Keyboard input is not supported (mouse interaction only)
-
-Conclusion
-
-This project demonstrates practical usage of JavaScript fundamentals, DOM manipulation, and user interaction handling.
-The application is designed to be simple, interactive, and easy to understand, while still behaving like a real frontend application.
+Open `index.html` in any modern web browser to use the application.
